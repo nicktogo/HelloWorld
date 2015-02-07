@@ -18,9 +18,9 @@ public class MainActivity extends Activity implements OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        Button button = (Button) findViewById(R.id.button);
+       // Button button = (Button) findViewById(R.id.button);
        
-        button.setOnClickListener(this);
+      //  button.setOnClickListener(this);
         
     }
     
@@ -28,11 +28,12 @@ public class MainActivity extends Activity implements OnClickListener{
 	public void onClick(View v){
 		switch(v.getId()){
 		case R.id.button:
-			AnotherRightFragment fragment = new AnotherRightFragment();
-			FragmentManager fragmentManager = getFragmentManager();
-			FragmentTransaction transaction = fragmentManager.beginTransaction();
-			transaction.replace(R.id.right_layout, fragment);
-			transaction.commit();
+	//		AnotherRightFragment fragment = new AnotherRightFragment();
+	//		FragmentManager fragmentManager = getFragmentManager();
+	//		FragmentTransaction transaction = fragmentManager.beginTransaction();
+	//		transaction.replace(R.id.right_layout, fragment);
+	//		transaction.addToBackStack(null);
+	//		transaction.commit();
 			break;
 		default:
 			break;
