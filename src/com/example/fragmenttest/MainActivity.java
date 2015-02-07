@@ -31,7 +31,7 @@ public class MainActivity extends Activity implements OnClickListener{
 			AnotherRightFragment fragment = new AnotherRightFragment();
 			FragmentManager fragmentManager = getFragmentManager();
 			FragmentTransaction transaction = fragmentManager.beginTransaction();
-			transaction.replace(R.id.right_fragment, fragment);
+			transaction.replace(R.id.right_layout, fragment);
 			transaction.commit();
 			break;
 		default:
